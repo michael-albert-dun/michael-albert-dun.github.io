@@ -131,10 +131,80 @@ h1 {
   background: var(--blue);
 }
 
+.puzzle-title-line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
 .puzzle-name {
   font-size: 1.55rem;
   font-weight: 720;
   line-height: 1;
+}
+
+.device-icons {
+  display: inline-flex;
+  align-items: end;
+  gap: 5px;
+  color: var(--muted);
+}
+
+.device-icon {
+  position: relative;
+  display: inline-block;
+  flex: 0 0 auto;
+  border: 2px solid currentColor;
+  opacity: 0.82;
+}
+
+.device-icon.phone {
+  width: 12px;
+  height: 19px;
+  transform: translateY(2px);
+  border-radius: 4px;
+}
+
+.device-icon.phone::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 2px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: currentColor;
+  transform: translateX(-50%);
+}
+
+.device-icon.screen {
+  width: 22px;
+  height: 15px;
+  margin-bottom: 2px;
+  border-radius: 3px;
+}
+
+.device-icon.screen::before,
+.device-icon.screen::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  background: currentColor;
+  transform: translateX(-50%);
+}
+
+.device-icon.screen::before {
+  bottom: -6px;
+  width: 2px;
+  height: 5px;
+}
+
+.device-icon.screen::after {
+  bottom: -8px;
+  width: 12px;
+  height: 2px;
+  border-radius: 999px;
 }
 
 .puzzle-note {
