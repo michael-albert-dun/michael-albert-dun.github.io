@@ -134,6 +134,10 @@ h1 {
 .candy-art span {
   border: 0;
   border-radius: 999px;
+  align-self: center;
+  justify-self: center;
+  width: 46px;
+  height: 46px;
   box-shadow:
     inset 8px 9px 12px rgba(255, 255, 255, 0.5),
     inset -8px -10px 14px rgba(70, 38, 52, 0.22),
@@ -146,23 +150,13 @@ h1 {
 }
 
 .candy-art span:nth-child(2),
-.candy-art span:nth-child(8) {
+.candy-art span:nth-child(4) {
   background: radial-gradient(circle at 34% 30%, #9ed8ff 0 14%, #0072b2 56%, #004f7d 100%);
 }
 
-.candy-art span:nth-child(4),
-.candy-art span:nth-child(9) {
-  background: radial-gradient(circle at 34% 30%, #9ee8cf 0 14%, #009e73 56%, #006f51 100%);
-}
-
 .candy-art span:nth-child(3),
-.candy-art span:nth-child(7) {
-  background: radial-gradient(circle at 34% 30%, #ffc8e8 0 14%, #cc79a7 56%, #925174 100%);
-}
-
 .candy-art span:nth-child(5) {
-  background: transparent;
-  box-shadow: none;
+  background: radial-gradient(circle at 34% 30%, #9ee8cf 0 14%, #009e73 56%, #006f51 100%);
 }
 
 .puzzle-title-line {
