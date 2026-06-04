@@ -131,10 +131,45 @@ h1 {
   background: var(--blue);
 }
 
+.candy-art span {
+  border: 0;
+  border-radius: 999px;
+  box-shadow:
+    inset 8px 9px 12px rgba(255, 255, 255, 0.5),
+    inset -8px -10px 14px rgba(70, 38, 52, 0.22),
+    0 8px 14px rgba(50, 37, 56, 0.18);
+}
+
+.candy-art span:nth-child(1),
+.candy-art span:nth-child(6) {
+  background: radial-gradient(circle at 34% 30%, #ffdca3 0 14%, #e69f00 56%, #ad7600 100%);
+}
+
+.candy-art span:nth-child(2),
+.candy-art span:nth-child(8) {
+  background: radial-gradient(circle at 34% 30%, #9ed8ff 0 14%, #0072b2 56%, #004f7d 100%);
+}
+
+.candy-art span:nth-child(4),
+.candy-art span:nth-child(9) {
+  background: radial-gradient(circle at 34% 30%, #9ee8cf 0 14%, #009e73 56%, #006f51 100%);
+}
+
+.candy-art span:nth-child(3),
+.candy-art span:nth-child(7) {
+  background: radial-gradient(circle at 34% 30%, #ffc8e8 0 14%, #cc79a7 56%, #925174 100%);
+}
+
+.candy-art span:nth-child(5) {
+  background: transparent;
+  box-shadow: none;
+}
+
 .puzzle-title-line {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -142,6 +177,17 @@ h1 {
   font-size: 1.55rem;
   font-weight: 720;
   line-height: 1;
+}
+
+.prototype-badge {
+  padding: 4px 7px;
+  border: 1px solid rgba(38, 50, 59, 0.18);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 760;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .device-icons {
