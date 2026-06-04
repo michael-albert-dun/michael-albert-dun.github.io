@@ -150,13 +150,23 @@ h1 {
 }
 
 .candy-art span:nth-child(2),
-.candy-art span:nth-child(4) {
+.candy-art span:nth-child(8) {
   background: radial-gradient(circle at 34% 30%, #9ed8ff 0 14%, #0072b2 56%, #004f7d 100%);
 }
 
-.candy-art span:nth-child(3),
-.candy-art span:nth-child(5) {
+.candy-art span:nth-child(4),
+.candy-art span:nth-child(9) {
   background: radial-gradient(circle at 34% 30%, #9ee8cf 0 14%, #009e73 56%, #006f51 100%);
+}
+
+.candy-art span:nth-child(3),
+.candy-art span:nth-child(7) {
+  background: radial-gradient(circle at 34% 30%, #ffc8e8 0 14%, #cc79a7 56%, #925174 100%);
+}
+
+.candy-art span:nth-child(5) {
+  background: transparent;
+  box-shadow: none;
 }
 
 .puzzle-title-line {
