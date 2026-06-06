@@ -116,8 +116,8 @@ h1 {
 .hex-art {
   position: relative;
   display: block;
-  width: 244px;
-  height: 205px;
+  width: 260px;
+  height: 245px;
   margin-bottom: 8px;
 }
 
@@ -153,22 +153,24 @@ h1 {
   clip-path: inherit;
 }
 
-.hex-art .hex-tile:nth-child(1) { --x: 24px; --y: 0px; }
-.hex-art .hex-tile:nth-child(2) { --x: 72px; --y: 0px; }
-.hex-art .hex-tile:nth-child(3) { --x: 120px; --y: 0px; }
-.hex-art .hex-tile:nth-child(4) { --x: 168px; --y: 0px; }
-.hex-art .hex-tile:nth-child(5) { --x: 0px; --y: 45px; }
-.hex-art .hex-tile:nth-child(6) { --x: 48px; --y: 45px; }
-.hex-art .hex-tile:nth-child(7) { --x: 96px; --y: 45px; }
-.hex-art .hex-tile:nth-child(8) { --x: 144px; --y: 45px; }
-.hex-art .hex-tile:nth-child(9) { --x: 72px; --y: 90px; }
-.hex-art .hex-tile:nth-child(10) { --x: 120px; --y: 90px; }
-.hex-art .hex-tile:nth-child(11) { --x: 168px; --y: 90px; }
-.hex-art .hex-tile:nth-child(12) { --x: 192px; --y: 45px; }
-.hex-art .hex-tile:nth-child(13) { --x: 24px; --y: 90px; }
-.hex-art .hex-tile:nth-child(14) { --x: 48px; --y: 135px; }
-.hex-art .hex-tile:nth-child(15) { --x: 96px; --y: 135px; }
-.hex-art .hex-tile:nth-child(16) { --x: 144px; --y: 135px; }
+.hex-art .hex-tile:nth-child(1) { --x: 94px; --y: 0px; }
+.hex-art .hex-tile:nth-child(2) { --x: 141px; --y: 0px; }
+.hex-art .hex-tile:nth-child(3) { --x: 24px; --y: 45px; }
+.hex-art .hex-tile:nth-child(4) { --x: 71px; --y: 45px; }
+.hex-art .hex-tile:nth-child(5) { --x: 118px; --y: 45px; }
+.hex-art .hex-tile:nth-child(6) { --x: 165px; --y: 45px; }
+.hex-art .hex-tile:nth-child(7) { --x: 0px; --y: 90px; }
+.hex-art .hex-tile:nth-child(8) { --x: 47px; --y: 90px; }
+.hex-art .hex-tile:nth-child(9) { --x: 94px; --y: 90px; }
+.hex-art .hex-tile:nth-child(10) { --x: 141px; --y: 90px; }
+.hex-art .hex-tile:nth-child(11) { --x: 188px; --y: 90px; }
+.hex-art .hex-tile:nth-child(12) { --x: 24px; --y: 135px; }
+.hex-art .hex-tile:nth-child(13) { --x: 71px; --y: 135px; }
+.hex-art .hex-tile:nth-child(14) { --x: 118px; --y: 135px; }
+.hex-art .hex-tile:nth-child(15) { --x: 165px; --y: 135px; }
+.hex-art .hex-tile:nth-child(16) { --x: 47px; --y: 180px; }
+.hex-art .hex-tile:nth-child(17) { --x: 94px; --y: 180px; }
+.hex-art .hex-tile:nth-child(18) { --x: 141px; --y: 180px; }
 
 .hex-art .hex-word-a {
   --hex-color: var(--blue);
