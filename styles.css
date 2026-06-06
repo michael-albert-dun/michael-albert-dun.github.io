@@ -113,6 +113,79 @@ h1 {
   background: var(--green);
 }
 
+.hex-art {
+  position: relative;
+  display: block;
+  width: 244px;
+  height: 205px;
+  margin-bottom: 8px;
+}
+
+.hex-art .hex-tile {
+  --hex-color: var(--blue);
+  --x: 0px;
+  --y: 0px;
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 59px;
+  border: 0;
+  border-radius: 0;
+  background: var(--hex-color);
+  clip-path: polygon(50% 0, 94% 25%, 94% 75%, 50% 100%, 6% 75%, 6% 25%);
+  color: var(--ink);
+  font-size: 1.5rem;
+  font-weight: 780;
+  line-height: 1;
+  filter: drop-shadow(0 7px 12px rgba(38, 50, 59, 0.09));
+  transition: transform 140ms ease;
+}
+
+.hex-art .hex-tile::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 3px solid rgba(255, 255, 255, 0.42);
+  pointer-events: none;
+  clip-path: inherit;
+}
+
+.hex-art .hex-tile:nth-child(1) { --x: 24px; --y: 0px; }
+.hex-art .hex-tile:nth-child(2) { --x: 72px; --y: 0px; }
+.hex-art .hex-tile:nth-child(3) { --x: 120px; --y: 0px; }
+.hex-art .hex-tile:nth-child(4) { --x: 168px; --y: 0px; }
+.hex-art .hex-tile:nth-child(5) { --x: 0px; --y: 45px; }
+.hex-art .hex-tile:nth-child(6) { --x: 48px; --y: 45px; }
+.hex-art .hex-tile:nth-child(7) { --x: 96px; --y: 45px; }
+.hex-art .hex-tile:nth-child(8) { --x: 144px; --y: 45px; }
+.hex-art .hex-tile:nth-child(9) { --x: 72px; --y: 90px; }
+.hex-art .hex-tile:nth-child(10) { --x: 120px; --y: 90px; }
+.hex-art .hex-tile:nth-child(11) { --x: 168px; --y: 90px; }
+.hex-art .hex-tile:nth-child(12) { --x: 192px; --y: 45px; }
+.hex-art .hex-tile:nth-child(13) { --x: 24px; --y: 90px; }
+.hex-art .hex-tile:nth-child(14) { --x: 48px; --y: 135px; }
+.hex-art .hex-tile:nth-child(15) { --x: 96px; --y: 135px; }
+.hex-art .hex-tile:nth-child(16) { --x: 144px; --y: 135px; }
+
+.hex-art .hex-word-a {
+  --hex-color: var(--blue);
+}
+
+.hex-art .hex-word-b {
+  --hex-color: var(--gold);
+}
+
+.hex-art .hex-word-c {
+  --hex-color: var(--green);
+}
+
+.hex-art .hex-word-d {
+  --hex-color: var(--pink);
+}
+
 .digit-art span:nth-child(1),
 .digit-art span:nth-child(5),
 .digit-art span:nth-child(9) {
