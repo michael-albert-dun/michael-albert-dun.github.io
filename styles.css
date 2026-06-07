@@ -219,42 +219,98 @@ h1 {
   background: var(--blue);
 }
 
-.candy-art span {
-  border: 0;
-  border-radius: 999px;
+.candy-art {
+  grid-template-columns: repeat(2, 64px);
+  grid-template-rows: repeat(2, 64px);
+  gap: 32px;
+  place-content: center;
+}
+
+.candy-art .food-icon {
+  --food-outline: #5a3a30;
+  position: relative;
   align-self: center;
   justify-self: center;
-  width: 46px;
-  height: 46px;
+  width: 58px;
+  height: 58px;
+  border: 3px solid var(--food-outline);
+  box-shadow: 0 8px 14px rgba(50, 37, 56, 0.14);
+}
+
+.candy-art .food-icon::before,
+.candy-art .food-icon::after {
+  content: "";
+  position: absolute;
+}
+
+.candy-art .food-burger {
+  border-radius: 12px;
+  background:
+    linear-gradient(#e8a445 0 23%, #f8d979 24% 36%, #3e8f4e 37% 48%, #76422d 49% 67%, #f1b451 68% 100%);
+}
+
+.candy-art .food-burger::after {
+  left: 22%;
+  top: 10%;
+  width: 56%;
+  height: 9%;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle, #fff4cf 0 24%, transparent 26%) 0 0 / 12px 100% repeat-x;
+}
+
+.candy-art .food-egg {
+  border-radius: 48% 52% 55% 45% / 46% 58% 42% 54%;
+  background:
+    radial-gradient(circle at 57% 50%, #ffbf24 0 17%, var(--food-outline) 18% 24%, transparent 25%),
+    radial-gradient(ellipse at 50% 52%, #fffdf0 0 62%, #e8e5d0 100%);
+  transform: rotate(-9deg);
+}
+
+.candy-art .food-egg::after {
+  left: 42%;
+  top: 28%;
+  width: 12%;
+  height: 8%;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.candy-art .food-milkshake {
+  width: 52px;
+  border-radius: 26px 26px 18px 18px / 22px 22px 34px 34px;
+  background:
+    linear-gradient(#fff8ef 0 21%, #8b5a3c 22% 68%, #5b3828 69% 100%);
+}
+
+.candy-art .food-milkshake::before {
+  left: 61%;
+  top: -28%;
+  width: 10%;
+  height: 42%;
+  border-radius: 999px;
+  background: #d64957;
+  transform: rotate(13deg);
+}
+
+.candy-art .food-milkshake::after {
+  left: 19%;
+  top: 15%;
+  width: 62%;
+  height: 16%;
+  border-radius: 6px;
+  background: #fff8ef;
+}
+
+.candy-art .food-waffle {
+  border-radius: 11px;
+  background:
+    linear-gradient(90deg, transparent 0 27%, #9f641f 28% 35%, transparent 36% 61%, #9f641f 62% 69%, transparent 70%),
+    linear-gradient(0deg, transparent 0 27%, #9f641f 28% 35%, transparent 36% 61%, #9f641f 62% 69%, transparent 70%),
+    #e6a842;
   box-shadow:
-    inset 8px 9px 12px rgba(255, 255, 255, 0.5),
-    inset -8px -10px 14px rgba(70, 38, 52, 0.22),
-    0 8px 14px rgba(50, 37, 56, 0.18);
-}
-
-.candy-art span:nth-child(1),
-.candy-art span:nth-child(6) {
-  background: radial-gradient(circle at 34% 30%, #ffdca3 0 14%, #e69f00 56%, #ad7600 100%);
-}
-
-.candy-art span:nth-child(2),
-.candy-art span:nth-child(8) {
-  background: radial-gradient(circle at 34% 30%, #9ed8ff 0 14%, #0072b2 56%, #004f7d 100%);
-}
-
-.candy-art span:nth-child(4),
-.candy-art span:nth-child(9) {
-  background: radial-gradient(circle at 34% 30%, #9ee8cf 0 14%, #009e73 56%, #006f51 100%);
-}
-
-.candy-art span:nth-child(3),
-.candy-art span:nth-child(7) {
-  background: radial-gradient(circle at 34% 30%, #ffc8e8 0 14%, #cc79a7 56%, #925174 100%);
-}
-
-.candy-art span:nth-child(5) {
-  background: transparent;
-  box-shadow: none;
+    0 8px 14px rgba(50, 37, 56, 0.14),
+    inset 0 1px 0 rgba(255, 245, 180, 0.5);
 }
 
 .matrix-art {
