@@ -317,26 +317,38 @@ h1 {
 }
 
 .matrix-art .matrix-stone {
+  position: relative;
   align-self: center;
   justify-self: center;
   width: 34px;
   height: 34px;
   border-radius: 999px;
+  overflow: hidden;
   background:
-    radial-gradient(circle at 32% 25%, rgba(255, 255, 255, 0.56) 0 12%, transparent 26%),
-    radial-gradient(circle at 56% 58%, var(--matrix-stone-color) 0 58%, color-mix(in srgb, var(--matrix-stone-color) 78%, #1f1713) 100%);
+    radial-gradient(ellipse at 31% 21%, rgba(255, 255, 255, 0.98) 0 9%, rgba(255, 255, 255, 0.42) 10% 20%, transparent 32%),
+    radial-gradient(circle at 50% 42%, color-mix(in srgb, var(--matrix-stone-color) 92%, #ffffff) 0 36%, var(--matrix-stone-color) 58%, color-mix(in srgb, var(--matrix-stone-color) 58%, #0f0b09) 100%);
   box-shadow:
-    inset 4px 5px 7px rgba(255, 255, 255, 0.36),
-    inset -5px -6px 8px rgba(32, 22, 17, 0.22),
-    0 3px 5px rgba(36, 24, 16, 0.18);
+    inset 4px 6px 8px rgba(255, 255, 255, 0.34),
+    inset -7px -9px 10px rgba(13, 9, 7, 0.34),
+    0 4px 6px rgba(36, 24, 16, 0.24);
+}
+
+.matrix-art .matrix-stone::before {
+  content: "";
+  position: absolute;
+  inset: 6px 9px auto;
+  height: 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.34);
+  filter: blur(0.25px);
 }
 
 .matrix-stone.stone-orange {
-  --matrix-stone-color: #e69f00;
+  --matrix-stone-color: #d84b2a;
 }
 
 .matrix-stone.stone-sky {
-  --matrix-stone-color: #56b4e9;
+  --matrix-stone-color: #0072b2;
 }
 
 .matrix-stone.stone-green {
@@ -344,7 +356,7 @@ h1 {
 }
 
 .matrix-stone.stone-purple {
-  --matrix-stone-color: #cc79a7;
+  --matrix-stone-color: #f0d84a;
 }
 
 .puzzle-title-line {
