@@ -219,14 +219,14 @@ h1 {
   background: var(--blue);
 }
 
-.candy-art {
+.deliagonal-art {
   grid-template-columns: repeat(2, 64px);
   grid-template-rows: repeat(2, 64px);
   gap: 32px;
   place-content: center;
 }
 
-.candy-art .food-icon {
+.deliagonal-art .food-icon {
   --food-outline: #5a3a30;
   position: relative;
   align-self: center;
@@ -237,19 +237,19 @@ h1 {
   box-shadow: 0 8px 14px rgba(50, 37, 56, 0.14);
 }
 
-.candy-art .food-icon::before,
-.candy-art .food-icon::after {
+.deliagonal-art .food-icon::before,
+.deliagonal-art .food-icon::after {
   content: "";
   position: absolute;
 }
 
-.candy-art .food-burger {
+.deliagonal-art .food-burger {
   border-radius: 12px;
   background:
     linear-gradient(#e8a445 0 23%, #f8d979 24% 36%, #3e8f4e 37% 48%, #76422d 49% 67%, #f1b451 68% 100%);
 }
 
-.candy-art .food-burger::after {
+.deliagonal-art .food-burger::after {
   left: 22%;
   top: 10%;
   width: 56%;
@@ -259,7 +259,7 @@ h1 {
     radial-gradient(circle, #fff4cf 0 24%, transparent 26%) 0 0 / 12px 100% repeat-x;
 }
 
-.candy-art .food-egg {
+.deliagonal-art .food-egg {
   border-radius: 48% 52% 55% 45% / 46% 58% 42% 54%;
   background:
     radial-gradient(circle at 57% 50%, #ffbf24 0 17%, var(--food-outline) 18% 24%, transparent 25%),
@@ -267,7 +267,7 @@ h1 {
   transform: rotate(-9deg);
 }
 
-.candy-art .food-egg::after {
+.deliagonal-art .food-egg::after {
   left: 42%;
   top: 28%;
   width: 12%;
@@ -276,14 +276,14 @@ h1 {
   background: rgba(255, 255, 255, 0.72);
 }
 
-.candy-art .food-milkshake {
+.deliagonal-art .food-milkshake {
   width: 52px;
   border-radius: 26px 26px 18px 18px / 22px 22px 34px 34px;
   background:
     linear-gradient(#fff8ef 0 21%, #8b5a3c 22% 68%, #5b3828 69% 100%);
 }
 
-.candy-art .food-milkshake::before {
+.deliagonal-art .food-milkshake::before {
   left: 61%;
   top: -28%;
   width: 10%;
@@ -293,7 +293,7 @@ h1 {
   transform: rotate(13deg);
 }
 
-.candy-art .food-milkshake::after {
+.deliagonal-art .food-milkshake::after {
   left: 19%;
   top: 15%;
   width: 62%;
@@ -302,7 +302,7 @@ h1 {
   background: #fff8ef;
 }
 
-.candy-art .food-waffle {
+.deliagonal-art .food-waffle {
   border-radius: 11px;
   background:
     linear-gradient(90deg, transparent 0 27%, #9f641f 28% 35%, transparent 36% 61%, #9f641f 62% 69%, transparent 70%),
