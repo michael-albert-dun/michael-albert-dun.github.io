@@ -219,6 +219,87 @@ h1 {
   background: var(--blue);
 }
 
+.hexiler-art {
+  position: relative;
+  display: block;
+  width: 236px;
+  height: 200px;
+  margin-bottom: 8px;
+}
+
+.hexiler-art .hexiler-tile {
+  --hex-color: var(--blue);
+  --hex-edge: #5ea4bf;
+  --x: 0px;
+  --y: 0px;
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 72px;
+  border: 0;
+  border-radius: 0;
+  background: var(--hex-edge);
+  clip-path: polygon(50% 0, 94% 25%, 94% 75%, 50% 100%, 6% 75%, 6% 25%);
+  color: var(--ink);
+  font-size: 1.7rem;
+  font-weight: 820;
+  line-height: 1;
+  filter: drop-shadow(0 8px 13px rgba(38, 50, 59, 0.11));
+  transition: transform 140ms ease;
+}
+
+.hexiler-art .hexiler-tile::before,
+.hexiler-art .hexiler-tile::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  clip-path: polygon(50% 0, 94% 25%, 94% 75%, 50% 100%, 6% 75%, 6% 25%);
+}
+
+.hexiler-art .hexiler-tile::before {
+  inset: 4px;
+  background: var(--hex-color);
+}
+
+.hexiler-art .hexiler-tile::after {
+  content: attr(data-digit);
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+  font-size: 1.7rem;
+  font-weight: 820;
+  clip-path: none;
+}
+
+.hexiler-art .hexiler-tile:nth-child(1) { --x: 53px; --y: 8px; }
+.hexiler-art .hexiler-tile:nth-child(2) { --x: 115px; --y: 8px; }
+.hexiler-art .hexiler-tile:nth-child(3) { --x: 150px; --y: 65px; }
+.hexiler-art .hexiler-tile:nth-child(4) { --x: 115px; --y: 122px; }
+.hexiler-art .hexiler-tile:nth-child(5) { --x: 53px; --y: 122px; }
+.hexiler-art .hexiler-tile:nth-child(6) { --x: 20px; --y: 65px; }
+
+.hexiler-art .hexiler-a,
+.hexiler-art .hexiler-d {
+  --hex-color: var(--gold);
+  --hex-edge: #c79f44;
+}
+
+.hexiler-art .hexiler-b,
+.hexiler-art .hexiler-e {
+  --hex-color: var(--green);
+  --hex-edge: #62ad97;
+}
+
+.hexiler-art .hexiler-c,
+.hexiler-art .hexiler-f {
+  --hex-color: var(--blue);
+  --hex-edge: #5ea4bf;
+}
+
 .deliagonal-art {
   grid-template-columns: repeat(2, 64px);
   grid-template-rows: repeat(2, 64px);
