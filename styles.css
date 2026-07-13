@@ -219,6 +219,44 @@ h1 {
   background: var(--blue);
 }
 
+.tintangle-art {
+  grid-template-columns: repeat(4, 44px);
+  grid-auto-rows: 44px;
+  gap: 4px;
+}
+
+.tintangle-art span {
+  border-radius: 13px;
+}
+
+.tintangle-art span:nth-child(1),
+.tintangle-art span:nth-child(6),
+.tintangle-art span:nth-child(11),
+.tintangle-art span:nth-child(16) {
+  background: #5ca9d3;
+}
+
+.tintangle-art span:nth-child(2),
+.tintangle-art span:nth-child(7),
+.tintangle-art span:nth-child(12),
+.tintangle-art span:nth-child(13) {
+  background: #efbd62;
+}
+
+.tintangle-art span:nth-child(3),
+.tintangle-art span:nth-child(4),
+.tintangle-art span:nth-child(9),
+.tintangle-art span:nth-child(14) {
+  background: #67bda1;
+}
+
+.tintangle-art span:nth-child(5),
+.tintangle-art span:nth-child(8),
+.tintangle-art span:nth-child(10),
+.tintangle-art span:nth-child(15) {
+  background: #d98778;
+}
+
 .hexiler-art {
   position: relative;
   display: block;
