@@ -257,6 +257,45 @@ h1 {
   background: #d98778;
 }
 
+.wordtangle-art {
+  grid-template-columns: repeat(4, 44px);
+  grid-auto-rows: 44px;
+  gap: 4px;
+}
+
+.wordtangle-art span {
+  border-radius: 13px;
+  font-size: 1.3rem;
+}
+
+.wordtangle-art span:nth-child(1),
+.wordtangle-art span:nth-child(2),
+.wordtangle-art span:nth-child(5),
+.wordtangle-art span:nth-child(6) {
+  background: #5ca9d3;
+}
+
+.wordtangle-art span:nth-child(3),
+.wordtangle-art span:nth-child(4),
+.wordtangle-art span:nth-child(8),
+.wordtangle-art span:nth-child(12) {
+  background: #67bda1;
+}
+
+.wordtangle-art span:nth-child(9),
+.wordtangle-art span:nth-child(10),
+.wordtangle-art span:nth-child(13),
+.wordtangle-art span:nth-child(14) {
+  background: #efbd62;
+}
+
+.wordtangle-art span:nth-child(7),
+.wordtangle-art span:nth-child(11),
+.wordtangle-art span:nth-child(15),
+.wordtangle-art span:nth-child(16) {
+  background: #d98778;
+}
+
 .hexiler-art {
   position: relative;
   display: block;
@@ -555,6 +594,18 @@ h1 {
   color: var(--muted);
   font-size: 0.72rem;
   font-weight: 760;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.danger-badge {
+  padding: 4px 7px;
+  border: 1px solid #c46355;
+  border-radius: 999px;
+  background: #fff1ed;
+  color: #9a4337;
+  font-size: 0.72rem;
+  font-weight: 800;
   line-height: 1;
   text-transform: uppercase;
 }
