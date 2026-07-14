@@ -574,10 +574,16 @@ h1 {
 }
 
 .puzzle-title-line {
+  display: grid;
+  justify-items: center;
+  gap: 7px;
+}
+
+.puzzle-title-primary,
+.puzzle-title-meta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 10px;
 }
 
