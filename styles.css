@@ -296,6 +296,45 @@ h1 {
   background: #d98778;
 }
 
+.reflexicon-art {
+  grid-template-columns: repeat(4, 44px);
+  grid-auto-rows: 44px;
+  gap: 4px;
+}
+
+.reflexicon-art span {
+  border-radius: 13px;
+  font-size: 1.3rem;
+}
+
+.reflexicon-art span:nth-child(1),
+.reflexicon-art span:nth-child(2),
+.reflexicon-art span:nth-child(3),
+.reflexicon-art span:nth-child(5) {
+  background: #5ca9d3;
+}
+
+.reflexicon-art span:nth-child(4),
+.reflexicon-art span:nth-child(6),
+.reflexicon-art span:nth-child(7),
+.reflexicon-art span:nth-child(8) {
+  background: #efbd62;
+}
+
+.reflexicon-art span:nth-child(9),
+.reflexicon-art span:nth-child(10),
+.reflexicon-art span:nth-child(11),
+.reflexicon-art span:nth-child(13) {
+  background: #67bda1;
+}
+
+.reflexicon-art span:nth-child(12),
+.reflexicon-art span:nth-child(14),
+.reflexicon-art span:nth-child(15),
+.reflexicon-art span:nth-child(16) {
+  background: #d98778;
+}
+
 .hexiler-art {
   position: relative;
   display: block;
