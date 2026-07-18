@@ -311,28 +311,28 @@ h1 {
 .reflexicon-art span:nth-child(2),
 .reflexicon-art span:nth-child(3),
 .reflexicon-art span:nth-child(5) {
-  background: #5ca9d3;
+  background: #56b4e9;
 }
 
 .reflexicon-art span:nth-child(4),
 .reflexicon-art span:nth-child(6),
 .reflexicon-art span:nth-child(7),
 .reflexicon-art span:nth-child(8) {
-  background: #efbd62;
+  background: #e69f00;
 }
 
 .reflexicon-art span:nth-child(9),
 .reflexicon-art span:nth-child(10),
 .reflexicon-art span:nth-child(11),
 .reflexicon-art span:nth-child(13) {
-  background: #67bda1;
+  background: #009e73;
 }
 
 .reflexicon-art span:nth-child(12),
 .reflexicon-art span:nth-child(14),
 .reflexicon-art span:nth-child(15),
 .reflexicon-art span:nth-child(16) {
-  background: #d98778;
+  background: #cc79a7;
 }
 
 .hexiler-art {
@@ -612,6 +612,19 @@ h1 {
   --matrix-stone-color: #f0d84a;
 }
 
+.corner-cases-art span {
+  font-size: 1.3rem;
+  border-radius: 10px;
+  background: rgba(38, 50, 59, 0.05);
+}
+
+.corner-cases-art span:nth-child(1),
+.corner-cases-art span:nth-child(2),
+.corner-cases-art span:nth-child(4),
+.corner-cases-art span:nth-child(5) {
+  background: var(--blue);
+}
+
 .puzzle-title-line {
   display: grid;
   justify-items: center;
@@ -633,6 +646,17 @@ h1 {
 }
 
 .prototype-badge {
+  padding: 4px 7px;
+  border: 1px solid rgba(38, 50, 59, 0.18);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 760;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.tag-badge {
   padding: 4px 7px;
   border: 1px solid rgba(38, 50, 59, 0.18);
   border-radius: 999px;
