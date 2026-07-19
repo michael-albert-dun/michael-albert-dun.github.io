@@ -625,6 +625,62 @@ h1 {
   background: var(--blue);
 }
 
+.tangleputt-art {
+  position: relative;
+  display: block;
+  width: 176px;
+  height: 176px;
+  border: 2px solid #4c8f65;
+  border-radius: 22px;
+  background: #5ea877;
+  overflow: hidden;
+}
+
+/* Laid out on an implied 3x3 grid (cell centres at 29/88/147px) so the
+   card reads as a small screenshot of the actual board -- hole top-right,
+   ball centre-left, sand trap centre. */
+.tangleputt-art .tangleputt-hole {
+  position: absolute;
+  top: 14px;
+  left: 132px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 32%, #435a49 0%, #2b3a30 62%, #1b241e 100%);
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, .5);
+}
+
+.tangleputt-art .tangleputt-ball {
+  position: absolute;
+  top: 78px;
+  left: 19px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 34% 28%, #ffffff 0%, #fbfdff 46%, #d7e0e6 100%);
+  box-shadow: 0 3px 6px rgba(45, 62, 76, .28);
+}
+
+.tangleputt-trap {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  border: 2px solid #b99a5f;
+  background: #ddc389;
+}
+.tangleputt-trap-a {
+  top: 73px;
+  left: 68px;
+  border-radius: 42% 58% 61% 39% / 45% 40% 60% 55%;
+  transform: rotate(-8deg);
+}
+.tangleputt-trap-b {
+  top: 132px;
+  left: 127px;
+  border-radius: 63% 37% 40% 60% / 55% 65% 35% 45%;
+  transform: rotate(9deg);
+}
+
 .puzzle-title-line {
   display: grid;
   justify-items: center;
