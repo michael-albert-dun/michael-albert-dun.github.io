@@ -612,6 +612,57 @@ h1 {
   --matrix-stone-color: #f0d84a;
 }
 
+.cyclomind-art {
+  position: relative;
+  display: block;
+  width: 176px;
+  height: 176px;
+  margin-bottom: 8px;
+}
+
+.cyclomind-art::before {
+  content: "";
+  position: absolute;
+  inset: 26px;
+  border-radius: 50%;
+  border: 3px dashed #c9ad82;
+}
+
+.cyclomind-art .cyclomind-bead {
+  --x: 0px;
+  --y: 0px;
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 0 3px rgba(38, 50, 59, 0.2),
+    0 6px 10px rgba(38, 50, 59, 0.14);
+  transition: transform 140ms ease;
+}
+
+.cyclomind-art .cyclomind-bead:nth-child(1) { --x: 68px; --y: 6px; }
+.cyclomind-art .cyclomind-bead:nth-child(2) { --x: 122px; --y: 37px; }
+.cyclomind-art .cyclomind-bead:nth-child(3) { --x: 122px; --y: 99px; }
+.cyclomind-art .cyclomind-bead:nth-child(4) { --x: 68px; --y: 130px; }
+.cyclomind-art .cyclomind-bead:nth-child(5) { --x: 14px; --y: 99px; }
+.cyclomind-art .cyclomind-bead:nth-child(6) { --x: 14px; --y: 37px; }
+
+.cyclomind-art .bead-cm-orange {
+  background: #d84b2a;
+}
+
+.cyclomind-art .bead-cm-sky {
+  background: #0072b2;
+}
+
+.cyclomind-art .bead-cm-green {
+  background: #2f9e44;
+}
+
 .corner-cases-art span {
   font-size: 1.3rem;
   border-radius: 10px;
